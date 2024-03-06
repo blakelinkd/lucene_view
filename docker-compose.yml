@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  lucee:
+    image: lucee/lucee:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./www:/var/www
+    environment:
+      - LUCEE_PASSWORD=myluceepassword # Change this to your desired Lucee password
+
